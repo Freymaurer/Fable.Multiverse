@@ -10,7 +10,7 @@
     <Description>A template to get up and running as fast as possible with Fable and publishing to multiple languages.</Description>
 	<PackageTags>fable fable-library fable-python fable-javascript fsharp template</PackageTags>
     <PackageProjectUrl>https://github.com/Freymaurer/Fable.Multiverse</PackageProjectUrl>
-
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
     <PackageType>Template</PackageType>
     <TargetFramework>net8.0</TargetFramework>
