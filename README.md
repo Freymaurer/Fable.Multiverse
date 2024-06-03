@@ -44,4 +44,3 @@ This template creates:
   - Python pytest Project
   - JavaScript Mocha Project
 - TypeScript support for tests and publishing with types.
-- 
