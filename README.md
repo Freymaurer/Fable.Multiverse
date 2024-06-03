@@ -13,11 +13,35 @@ On creation this template supports:
 * Python
 * CSharp
 
+---
 ## Install
 
 `dotnet new install Fable.Multiverse`
 
+---
 ## Create
 
 1. `dotnet new fable.multiverse -n <project-name> --git-owner <git-owner>`
 2. Follow the instructions in the README.md of the created project. 🎉
+
+---
+## Overview
+
+This template creates:
+
+- Build Project
+  - Testing
+  - Bundling
+  - Publishing
+  - Automatic index file creation
+  - Code generator for C# access layer
+- Src Projects
+  - F# Project
+  - C# Access layer project
+- Test Projects
+  - [Fable.Pyxpecto](https://github.com/Freymaurer/Fable.Pyxpecto) Project
+  - C# Xunit Project
+  - Python pytest Project
+  - JavaScript Mocha Project
+- TypeScript support for tests and publishing with types.
+- 
