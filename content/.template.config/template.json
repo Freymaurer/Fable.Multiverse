@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Kevin Frey <Freymaurer>",
+  "classifications": [ "F#", "Fable", "Build" ],
+  "identity": "Fable.Multiverse",
+  "name": "Fable.Multiverse",
+  "shortName": "fable.multiverse",
+  "sourceName":"ProjectNameVar",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "symbols": {
+    "git-owner": {
+      "description": "The name of the organization or github user that owns the github repo",
+      "type": "parameter",
+      "replaces": "{GITOWNER}",
+      "defaultValue": "PLACEHOLDER_GITOWNER"
+    }
+  }
+}

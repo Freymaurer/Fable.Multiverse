@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D8E3D46-E21A-48D3-A936-550D9508078B}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ProjectNameVar", "src\ProjectNameVar\ProjectNameVar.fsproj", "{DB8E0883-6C2D-4143-82E0-BD3E9BA19B82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{266DF51F-41DE-4F31-8969-252187818FE9}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ProjectNameVar.Tests", "tests\ProjectNameVar.Tests\ProjectNameVar.Tests.fsproj", "{A5A496A9-3F38-4233-9E59-44356E7B3CD2}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Build", "build\Build.fsproj", "{BC8F8BCB-4AA0-4053-8D63-923F4CAE2907}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28542E53-F6B7-4FB2-A9C7-F05F758A5D3B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		package.json = package.json
+		pyproject.toml = pyproject.toml
+		README.md = README.md
+		tsconfig.json = tsconfig.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectNameVar.CSharp", "src\ProjectNameVar.CSharp\ProjectNameVar.CSharp.csproj", "{AD197B76-5246-48C5-9D44-52E44FDB8555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectNameVar.CSharp.Tests", "tests\ProjectNameVar.CSharp.Tests\ProjectNameVar.CSharp.Tests.csproj", "{C0932751-0BD4-4045-A97F-FA9B26812080}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB8E0883-6C2D-4143-82E0-BD3E9BA19B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8E0883-6C2D-4143-82E0-BD3E9BA19B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8E0883-6C2D-4143-82E0-BD3E9BA19B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8E0883-6C2D-4143-82E0-BD3E9BA19B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A496A9-3F38-4233-9E59-44356E7B3CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A496A9-3F38-4233-9E59-44356E7B3CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A496A9-3F38-4233-9E59-44356E7B3CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A496A9-3F38-4233-9E59-44356E7B3CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8F8BCB-4AA0-4053-8D63-923F4CAE2907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8F8BCB-4AA0-4053-8D63-923F4CAE2907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8F8BCB-4AA0-4053-8D63-923F4CAE2907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8F8BCB-4AA0-4053-8D63-923F4CAE2907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD197B76-5246-48C5-9D44-52E44FDB8555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD197B76-5246-48C5-9D44-52E44FDB8555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD197B76-5246-48C5-9D44-52E44FDB8555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD197B76-5246-48C5-9D44-52E44FDB8555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0932751-0BD4-4045-A97F-FA9B26812080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0932751-0BD4-4045-A97F-FA9B26812080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0932751-0BD4-4045-A97F-FA9B26812080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0932751-0BD4-4045-A97F-FA9B26812080}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB8E0883-6C2D-4143-82E0-BD3E9BA19B82} = {2D8E3D46-E21A-48D3-A936-550D9508078B}
+		{A5A496A9-3F38-4233-9E59-44356E7B3CD2} = {266DF51F-41DE-4F31-8969-252187818FE9}
+		{AD197B76-5246-48C5-9D44-52E44FDB8555} = {2D8E3D46-E21A-48D3-A936-550D9508078B}
+		{C0932751-0BD4-4045-A97F-FA9B26812080} = {266DF51F-41DE-4F31-8969-252187818FE9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BDE94CF-48F6-49B0-95F8-39BAB4C66404}
+	EndGlobalSection
+EndGlobal

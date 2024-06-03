@@ -1,0 +1,31 @@
+{
+  "name": "ProjectNameVar",
+  "description": "placeholer",
+  "keywords": [],
+  "version": "0.1.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "files": [ "dist/js" ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{Owner}/ProjectNameVar.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/{Owner}/ProjectNameVar/issues"
+  },
+  "homepage": "https://github.com/{Owner}/ProjectNameVar#readme",
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "fable-library": "^1.1.1"
+  }
+}

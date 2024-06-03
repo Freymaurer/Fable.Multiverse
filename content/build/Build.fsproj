@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="CodeGen.fs" />
+    <Compile Include="Util.fs" />
+    <Compile Include="ProjectInfo.fs" />
+    <Compile Include="IndexFiles\WhiteList.fs" />
+    <Compile Include="IndexFiles\Util.fs" />
+    <Compile Include="IndexFiles\Indexjs.fs" />
+    <Compile Include="IndexFiles\Indexpy.fs" />
+    <Compile Include="Bundle\Net.fs" />
+    <Compile Include="Bundle\TypeScript.fs" />
+    <Compile Include="Bundle\Python.fs" />
+    <Compile Include="Publish\Nuget.fs" />
+    <Compile Include="Publish\PyPi.fs" />
+    <Compile Include="Publish\Npm.fs" />
+    <Compile Include="Test\CSharp.fs" />
+    <Compile Include="Test\Python.fs" />
+    <Compile Include="Test\JavaScript.fs" />
+    <Compile Include="Test\FSharp.fs" />
+    <Compile Include="Main.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlackFox.CommandLine" Version="1.0.0" />
+    <PackageReference Include="SimpleExec" Version="12.0.0" />
+  </ItemGroup>
+
+</Project>
