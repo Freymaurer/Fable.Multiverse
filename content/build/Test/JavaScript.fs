@@ -2,8 +2,7 @@
 
 open SimpleExec
 open BlackFox.CommandLine
-open Build
-open Build.Utils.Path.Operators
+open Utils.Path.Operators
 
 [<LiteralAttribute>]
 let private outDir = "js"
