@@ -1,8 +1,8 @@
-﻿module Build.ProjectInfo
+﻿module ProjectInfo
 
 open System.IO
-open Build.Utils
-open Build.Utils.Path
+open Utils
+open Utils.Path
 open Utils.Path.Operators
 
 let root = Path.Resolve()
@@ -11,6 +11,17 @@ let Owner = "{Owner}"
 
 [<Literal>]
 let ProjectName = "ProjectNameVar"
+
+[<Literal>]
+let ProjectNameCSharp = "ProjectNameVar.CSharp"
+
+/// This might require adjustment. If you adjust this also update pyproject.toml!
+[<Literal>]
+let ProjectNamePython = "ProjectNameVar"
+
+/// This might require adjustment. If you adjust this also update package.json!
+[<Literal>]
+let ProjectNameJavaScript = "ProjectNameVar"
 
 [<Literal>]
 let Version = "0.1.0"
@@ -60,12 +71,12 @@ module Packages =
 module Projects =
 
     let MainDir = $"src\{ProjectName}"
-    let MainCSharpDir = $"src\{ProjectName}.CSharp"
+    let MainCSharpDir = $"src\{ProjectNameCSharp}"
 
     let Main = $"{ProjectName}.fsproj"
-    let MainCSharp = $"{ProjectName}.CSharp.csproj"
+    let MainCSharp = $"{ProjectNameCSharp}.csproj"
     let Tests = $"{ProjectName}.Tests.fsproj"
-    let TestsCSharp = $"{ProjectName}.CSharp.Tests.csproj"
+    let TestsCSharp = $"{ProjectNameCSharp}.Tests.csproj"
 
 
 let getEnvVar key = System.Environment.GetEnvironmentVariable(key, System.EnvironmentVariableTarget.User)

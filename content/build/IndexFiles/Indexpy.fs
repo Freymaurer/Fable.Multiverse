@@ -29,19 +29,7 @@ let private generateIndexfile (rootPath: string, fileName: string, whiteList: st
     |> createImportStatements
     |> Util.writeIndexFile rootPath fileName
 
-let generate(rootPath: string) = 
-    // code to make camelcase to snakecase
-    /// This is because we currently snake_case everything that does not start with a capital letter
-    let camelCaseToSnakeCase (str: string) = 
-        if Char.IsUpper str.[0] then
-            str 
-        else
-            str 
-            |> Seq.fold (fun (acc: string) c -> 
-                if Char.IsUpper c then 
-                    acc + "_" + string (Char.ToLower c) 
-                else 
-                    acc + string c
-            ) ""
-    let snake_case_white_list = WhiteList.WhiteList |> Array.map camelCaseToSnakeCase
-    generateIndexfile(rootPath, "index.py", snake_case_white_list)
+let generate(rootPath: string) (name: string) = 
+   
+    let snake_case_white_list = WhiteList.WhiteList |> Array.map Utils.camelCaseToSnakeCase
+    generateIndexfile(rootPath, name, snake_case_white_list)

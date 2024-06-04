@@ -1,4 +1,4 @@
-﻿module Build.Utils
+﻿module Utils
 
 open System.IO
 open System
@@ -32,3 +32,16 @@ module Path =
             // Use GetFullPath to clean the path
             Path.GetFullPath(Path.Combine(paths))
 
+// code to make camelcase to snakecase
+/// This is because we currently snake_case everything that does not start with a capital letter
+let camelCaseToSnakeCase (str: string) = 
+    if Char.IsUpper str.[0] then
+        str 
+    else
+        str 
+        |> Seq.fold (fun (acc: string) c -> 
+            if Char.IsUpper c then 
+                acc + "_" + string (Char.ToLower c) 
+            else 
+                acc + string c
+        ) ""

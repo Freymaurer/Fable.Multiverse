@@ -38,7 +38,7 @@ let handleNative (args: string list) =
             "dotnet",
             fableTranspile
         )
-        Index.PY.generate dirPath
+        Index.PY.generate dirPath "index.py"
         Command.Run(
           python,
           pytestCommand

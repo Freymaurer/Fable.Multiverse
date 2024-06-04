@@ -22,4 +22,15 @@ public class UnitTest1
         Main.PrintTuples([("Test1", "Test1a"), ("Test2", "Test2b")]);
         Assert.True(true);
     }
+
+    public class CompletenessTests
+    {
+        [Fact]
+        public void TestCompleteness()
+        {
+            Type csharpType = typeof(ProjectNameVar.CSharp.Main);
+            Type fsharpType = typeof(ProjectNameVar.Main);
+            Util.CompletenesUtil.CompareClasses(csharpType, fsharpType);
+        }
+    }
 }

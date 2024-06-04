@@ -1,4 +1,4 @@
-﻿module CodeGen
+﻿module Build.CodeGen
 
 open System.Reflection
 
@@ -70,9 +70,9 @@ let generateCSharpCode<'A>() =
         let methodBody = 
             if methodName.StartsWith("get_") then
                 let withoutGet = methodName.Substring(4)
-                $"return Siren.{t.Name}.{withoutGet};"
+                $"return {ProjectInfo.ProjectName}.{t.Name}.{withoutGet};"
             else
-                $" => Siren.{t.Name}.{methodName}{fsharpParameters};"
+                $" => {ProjectInfo.ProjectName}.{t.Name}.{methodName}{fsharpParameters};"
         csharpCode <- csharpCode + $"    {methodSignature}\n        {methodBody}\n"
 
     csharpCode <- csharpCode + "}\n"

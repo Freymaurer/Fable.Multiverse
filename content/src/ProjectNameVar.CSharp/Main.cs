@@ -3,7 +3,7 @@
 using ProjectNameVar.CSharp.Util;
 
 
-public class Main
+public static class Main
 {
     public static void Hello(string name, Optional<string> from = default)
     {

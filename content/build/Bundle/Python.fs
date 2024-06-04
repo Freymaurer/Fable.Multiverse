@@ -16,7 +16,7 @@ let private transpileFSharp(pyPath) =
     |> CmdLine.appendRaw "fable"
     // |> CmdLine.appendIf isWatch "--watch"
     |> CmdLine.appendRaw ProjectInfo.Projects.Main
-    |> CmdLine.appendPrefix "-o" (Path.Combine(pyPath,"siren_dsl"))
+    |> CmdLine.appendPrefix "-o" pyPath
     |> CmdLine.appendRaw "--noCache"
     |> CmdLine.appendPrefix "--lang" "py"
     |> CmdLine.appendPrefix "--fableLib" "fable-library"
@@ -34,8 +34,10 @@ let private peotryBundle =
     |> CmdLine.toString
 
 let Main(pyDir: string) = 
+    let projectName = Utils.camelCaseToSnakeCase ProjectInfo.ProjectNamePython |> _.Replace("-","_")
+    let publishDir = pyDir </> projectName
     clean(pyDir)
-    Command.Run("dotnet", transpileFSharp pyDir)
-    Index.PY.generate pyDir
+    Command.Run("dotnet", transpileFSharp publishDir)
+    Index.PY.generate publishDir "__init__.py"
     copyMetadata pyDir
     Command.Run("python", peotryBundle, workingDirectory=pyDir)

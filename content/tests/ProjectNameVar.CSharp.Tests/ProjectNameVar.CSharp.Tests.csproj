@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\ProjectNameVar.CSharp\ProjectNameVar.CSharp.csproj" />
+    <ProjectReference Include="..\..\src\ProjectNameVar\ProjectNameVar.fsproj" />
   </ItemGroup>
 
   <ItemGroup>

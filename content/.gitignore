@@ -395,8 +395,7 @@ FodyWeavers.xsd
 *.sln.iml
 py/
 js/
-tests/JavaScript/siren/
-tests/Python/siren/
+ts/
 .venv
 /docs/.vscode
 /dist
