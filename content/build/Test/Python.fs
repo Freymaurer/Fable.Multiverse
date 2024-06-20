@@ -2,7 +2,6 @@
 
 open SimpleExec
 open BlackFox.CommandLine
-open Build
 open Utils.Path.Operators
 
 let private outDir = ProjectInfo.TestPaths.CoreDirectory </> "py"

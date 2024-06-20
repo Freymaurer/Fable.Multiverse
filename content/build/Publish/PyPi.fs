@@ -2,7 +2,6 @@
 
 open SimpleExec
 open BlackFox.CommandLine
-open Build
 
 open System.IO
 open System

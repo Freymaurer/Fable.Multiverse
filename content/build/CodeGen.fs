@@ -1,4 +1,4 @@
-﻿module Build.CodeGen
+﻿module CodeGen
 
 open System.Reflection
 

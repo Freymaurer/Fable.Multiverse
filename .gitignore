@@ -1,3 +1,5 @@
 ﻿/.vs/Fable.Multiverse
 /obj
 /bin/Release
+/content/tests/ProjectNameVar.JavaScript.Tests/ProjectNameVar
+/content/tests/ProjectNameVar.Python.Tests/ProjectNameVar
