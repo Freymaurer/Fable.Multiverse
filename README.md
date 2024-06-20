@@ -1,7 +1,7 @@
 # Fable.Multiverse
 
-<a href="https://www.nuget.org/packages/Fable.Multiverse/0.1.0"><img src="https://img.shields.io/nuget/dt/Fable.Multiverse?style=for-the-badge&logo=nuget"></a>
-<a href="https://www.nuget.org/packages/Fable.Multiverse/0.1.0"><img alt="NuGet Version" src="https://img.shields.io/nuget/v/Fable.Multiverse?style=for-the-badge"></a>
+<a href="https://www.nuget.org/packages/Fable.Multiverse"><img src="https://img.shields.io/nuget/dt/Fable.Multiverse?style=for-the-badge&logo=nuget"></a>
+<a href="https://www.nuget.org/packages/Fable.Multiverse"><img alt="NuGet Version" src="https://img.shields.io/nuget/v/Fable.Multiverse?style=for-the-badge"></a>
 
 A template to get up and running as fast as possible with Fable and publishing to multiple languages.
 
@@ -44,3 +44,14 @@ This template creates:
   - Python pytest Project
   - JavaScript Mocha Project
 - TypeScript support for tests and publishing with types.
+- Dev Container support for VSCode
+
+
+--
+## Publishing
+
+1. Increase version in `Fable.Multiverse.fsproj`
+2. `dotnet pack .\Fable.Multiverse.fsproj`
+3. Upload `.npkg` from `bin/Release/*`
+4. `git tag v<new_version>`
+5. `git push origin tag v<new_version>`
